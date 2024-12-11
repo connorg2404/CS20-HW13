@@ -10,7 +10,7 @@ const uri = 'mongodb+srv://connorg2404:Tusd2026@cs20-hw13.be1nl.mongodb.net/?ret
 
 http.createServer(async function (req, res) {
     const client = new MongoClient(uri);
-    await client.connect();
+    client.connect();
     const db = client.db('Stock');
     const collection = db.collection('PublicCompanies');
     res.writeHead(200, { 'Content-Type': 'text/html' });
