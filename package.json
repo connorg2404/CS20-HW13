@@ -6,6 +6,13 @@
   "scripts": {
       "start": "node part2.js"
   },
+  "dependencies": {
+      "mongodb": "^5.6.0" // Replace with the latest version compatible with your code
+  },
+  "engines": {
+      "node": ">=16.0.0", // Replace with the version you are using
+      "npm": ">=8.0.0"
+  },
   "repository": {
       "type": "git",
       "url": ""
@@ -15,12 +22,5 @@
   "bugs": {
       "url": ""
   },
-  "homepage": "",
-  "dependencies": {
-      "mongodb": "^8.0.3"
-  },
-  "engines": {
-      "node": ">=22.12.0",
-      "npm": ">=10.9.0"
-  }
+  "homepage": ""
 }
