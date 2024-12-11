@@ -1,0 +1,19 @@
+<!-- HTML code for the form to be displayed on the home page for part 2 -->
+<h1>NYSE - Company Search </h1>
+<form action="/process" method="GET">
+    <label for="search">Please enter a stock ticker or company name:</label>
+    <br>
+    <input type="text" id="search" name="search" required>
+    <br><br>
+    <label>
+        <input type="radio" name="type" value="ticker" required>
+        Search by Ticker
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="type" value="name" required>
+        Search by Name
+    </label>
+    <br><br>
+    <button type="submit">Search</button>
+</form>
