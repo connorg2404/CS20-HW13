@@ -44,7 +44,7 @@ http.createServer(async function (req, res) {
             }
 
             // Get and display results
-            const results = await collection.find(dbQuery).toArray();
+            const results = collection.find(dbQuery).toArray();
             res.write('<h1>Search Results</h1>');
             if (results.length === 0) {
                 res.write('<p>No results found.</p>');
