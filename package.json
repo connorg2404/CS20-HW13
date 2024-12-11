@@ -1,0 +1,19 @@
+{
+  "name": "part2",
+  "version": "1.0.0",
+  "description": "NYSE search web app ",
+  "main": "part2.js",
+  "scripts": {
+  "start": "node part2.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}
