@@ -1,3 +1,4 @@
+// Packages/Dependencies
 var http = require('http');
 var url = require('url');
 var qs = require('querystring');
@@ -8,6 +9,7 @@ var port = process.env.PORT || 3000;
 // MongoDB connection URI
 const uri = 'mongodb+srv://connorg2404:Tusd2026@cs20-hw13.be1nl.mongodb.net/?retryWrites=true&w=majority&appName=CS20-HW13';
 
+// Create the server
 http.createServer(async function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     var urlObj = url.parse(req.url, true);
@@ -64,12 +66,17 @@ http.createServer(async function (req, res) {
             }
             res.write('<a href="/">Back to Home</a>');
             res.end();
+
+        // Catch any error in processing a request
         } catch (error) {
             console.error('Error processing request:', error.message);
             res.write('<p>An error occurred while processing your request.</p>');
+            res.write('<a href="/">Back to Home</a>');
             res.end();
+        
+        // Close the client (database) once we're done
         } finally {
             client.close();
         }
     }
-}).listen(port);
+}).listen(port); // Display to the proper place
