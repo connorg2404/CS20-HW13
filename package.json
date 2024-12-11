@@ -1,19 +1,26 @@
 {
   "name": "part2",
   "version": "1.0.0",
-  "description": "NYSE search web app ",
+  "description": "NYSE search web app",
   "main": "part2.js",
   "scripts": {
-  "start": "node part2.js"
-},
+      "start": "node part2.js"
+  },
   "repository": {
-  "type": "git",
-  "url": ""
-},
+      "type": "git",
+      "url": ""
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": ""
-},
-  "homepage": ""
+      "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+      "mongodb": "^8.0.3"
+  },
+  "engines": {
+      "node": ">=22.12.0",
+      "npm": ">=10.9.0"
+  }
 }
